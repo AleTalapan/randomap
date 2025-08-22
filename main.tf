@@ -84,7 +84,7 @@ resource "aws_apprunner_service" "app_service" {
   }
 }
 
-# This tells Terraform to print out the final URL after everything is built.
+# This tells Terraform to print out the final URL after everything is built..
 output "app_url" {
   description = "The public URL of the App Runner service."
   value       = "https://${aws_apprunner_service.app_service.service_url}"
